@@ -1,0 +1,353 @@
+/* general styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+li{
+    list-style: none;
+}
+.section-p{
+    padding: 2rem 4rem;
+}
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    background-color:  rgb(29, 28, 28);
+    font-family: "Roboto", sans-serif;
+}
+.wrapper{
+    position: relative;
+    width: 100%;
+}
+/* nav bar section */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.brand-logo a{
+    color: #fff;
+    font-size: 2.4rem;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 1.7rem;
+}
+/* hero section  */
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin-top: 4rem;
+}
+.hero-left-section h1{
+    font-size: 4rem;
+    line-height: 1.5;
+}
+.hero-left-section p{
+    font-size: 1.7rem;
+    color: #949393;
+    margin: 2rem 0;
+}
+.cta-button{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+#download-btn{
+    background-color: #08a55c;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-size: 1.7rem;
+    border-radius: 2px;
+}
+#learn-more-btn{
+    background-color: transparent;
+    border: 1px solid #949393;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-size: 1.7rem;
+    border-radius: 2px;
+}
+.hero-right-section .profile-container{
+    width: 400px;
+}
+.profile-container img{
+    width: 80%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px rgba(75, 75, 75, 0.4)
+}
+/* article */
+    article{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    h2{
+        font-size: 2.5rem;
+        color: #fff;
+    }
+    p{
+        font-size: 1.6rem;
+        color: #fff;
+        line-height: 1.7;
+    }
+}
+
+/* contact-section */
+.contact-section{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.contact-container{
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+.active img{
+    border-radius: 50%;
+}
+.contact-container h3{
+    font-size: 1.8rem;
+    margin: 0.7rem auto;
+}
+.contact-container p{
+    font-size: 1.5rem;
+}
+/* profession-section */
+.profession-section{
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+.profession-section h2{
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.profession-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+.profession-container{
+    background-color: #282828;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    width: 120px;
+    padding: 2rem;
+}
+.profession-container >span{
+    margin: 1rem;
+    font-size: 1.7rem;
+    color: #949393;
+    font-weight: 700;
+}
+/* skill-section */
+.skill-section h2{
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.skill-wrapper{
+    background-color: #282828;
+    padding: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skill-container>img{
+    width: 100px;
+}
+/* get in touch section */
+.message-info{
+    position: relative;
+    width: 100%;
+    
+}
+.message-info h2{
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    margin: 3rem auto;
+}
+form{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.field-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.field-wrapper>input{
+    width: 50%;
+}
+.message{
+    width: 100%;
+}
+.message>input{
+    width: 100%;
+}
+input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #3d3d3d;
+    background-color: transparent;
+    padding: 0.5rem;
+    color: #fff;
+    font-size: 1.7rem;
+    margin: 0.7rem 0;
+}
+#submit-btn{
+    outline: none;
+    background-color: #08a55c;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1.7rem;
+    border: none;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+/* media querries  */
+
+@media(max-width: 67rem){
+    /* 1066px / 16px = 66.625 = 67rem screen size */
+
+    html{
+        font-size: 56.25%;
+        /*  9px / 16px = 56.25%*/
+    }
+}
+
+
+@media(max-width: 60rem){
+    /* 955px / 16px = 59.6875 = 60rem screen size */
+
+    html{
+        font-size: 50%;
+        /*  8px / 16px = 50%*/
+    }
+
+    .hero-right-section .profile-container {
+        width: 350px;
+    }
+    .skill-container>img {
+    width: 90px;
+    }
+
+}
+
+
+@media(max-width: 53rem){
+    /* 847px / 16px = 52.9375 = 53rem screen size */
+
+    html{
+        font-size: 43.75%;
+        /*  7px / 16px = 43.75%*/
+    }
+    main {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        gap: 4rem;
+        margin-top: 4rem;
+    }
+    .hero-right-section .profile-container {
+        width: 300px;
+    }
+    .contact-container h3 {
+        font-size: 1.4rem;
+        margin: 0.7rem auto;
+    }
+    .contact-container p {
+        font-size: 1.2rem;
+    }
+    .skill-container>img {
+        width: 80px;
+    }
+}
+
+@media(max-width: 44rem){
+    /* 699px / 16px = 43.6875 = 44rem screen size */
+
+    html{
+        font-size: 37.5%;
+        /*  6px / 16px = 37.5%*/
+    }
+    main {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        gap: 2rem;
+        margin: 0 auto;
+    }
+    .hero-right-section .profile-container {
+        width: 250px;
+    }
+    .contact-section {
+        gap: 1rem;
+    }
+    .contact-container h3 {
+        font-size: 1rem;
+        margin: 0.7rem auto;
+    }
+    .contact-container p {
+        font-size: 0.8rem;
+    }
+    .skill-container>img {
+        width: 70px;
+    }
+}
+@media(max-width: 40rem){
+    /* 627px / 16px = 39.1875 = 40rem screen size */
+
+    html{
+        font-size: 31.25%;
+        /*  5px / 16px = 31.25%*/
+    }.hero-right-section .profile-container {
+        width: 180px;
+    }
+    .skill-container>img {
+        width: 60px;
+    }
+    
+}
